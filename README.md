@@ -20,7 +20,7 @@ ideas that generalize and for building things.
 - **Written tests (in order):** Quiz-1, Mid-Sem, Quiz-2, End-Sem.
 - **Coursework:** a systems-integration build on a real industry challenge (Assignment-1), a
   from-scratch implementation (Assignment-2), a term project, and an **Optional-for-bonus track**
-  (up to +5%). Assignments are meant to be *built with coding assistants* (Claude Code, etc.) —
+  (up to +10%). Assignments are meant to be *built with coding assistants* (Claude Code, etc.) —
   the exams then verify the student understood the code and theory.
 
 ### Reference material
@@ -564,5 +564,14 @@ Scoped prototypes; evaluation plan agreed with the instructor first:
   corpus; compare against BM25/dense and study behaviour under index updates. 
 - **RAG evaluation harness** — chunking + hybrid retrieval + rerank + generate, with RAGAS-style
   grounding and answer-quality evaluation. 
+
+## AI usage policy statement
+
+You are expected to use a coding assistant for assignments and project 
+but in evaluation that includes closed-book quiz and exams along with presentation and vivas 
+you are expected to explain what you built by yourself. 
+Work done in teams will also be individually evaluated and the ability (or inability) to explain 
+irrespective of whoever has built it (self, teammate or coding agent) will decide the scoring.
+The evaluation rubric for each component will given out with the problem statement.
 
 ---
