@@ -7,19 +7,18 @@ approximate nearest neighbors), and **practice** (evaluation, A/B testing, lifec
 industry architectures) — and closes with frontier topics.
 
 **Design stance.** Conventional methods (BM25, PageRank, classic compression, matrix
-factorization, …) are *introduced, not dwelt on*. Each is used to surface a transferable
-**principle** — compression trades cheap compute for scarce bandwidth; BM25 exposes the
+factorization, …) are *introduced, not dwelt on*. Each is used to surface a principle 
+— compression trades cheap compute for scarce bandwidth; BM25 exposes the
 probabilistic ranking principle — rather than to drill mechanics. Every lecture states its
-**major takeaway** explicitly and lists the specifics it would cover. Depth is reserved for
+major takeaway explicitly and lists the specifics it would cover. Depth is reserved for
 ideas that generalize and for building things.
 
 ## Format at a glance
 
-- **22 lectures**, 1.5 hours each, **two per week**, grouped into **eight modules**.
-- **Semester:** 1 August → 30 November.
+- **Timeline:** About 30 hours of lecture, eight modules from 1 August → 30 November.
 - **Written tests (in order):** Quiz-1, Mid-Sem, Quiz-2, End-Sem.
 - **Coursework:** a systems-integration build on a real industry challenge (Assignment-1), a
-  from-scratch implementation (Assignment-2), a term project, and an **Optional-for-bonus track**
+  from-scratch implementation (Assignment-2), a term project, and an **optional-for-bonus track**
   (up to +10%). Assignments are meant to be *built with coding assistants* (Claude Code, etc.) —
   the exams then verify the student understood the code and theory.
 
