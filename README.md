@@ -6,7 +6,7 @@ scaling, latency budgets), **machine learning** (ranking, CTR/CVR, embeddings,
 approximate nearest neighbors), and **practice** (evaluation, A/B testing, lifecycle,
 industry architectures) — and closes with frontier topics.
 
-**Design stance.** Conventional methods (BM25, PageRank, classic compression, matrix
+Conventional methods (BM25, PageRank, classic compression, matrix
 factorization, …) are *introduced, not dwelt on*. Each is used to surface a principle 
 — compression trades cheap compute for scarce bandwidth; BM25 exposes the
 probabilistic ranking principle — rather than to drill mechanics. Every lecture states its
@@ -321,7 +321,7 @@ controls the error — the difference between a real win and noise you talked yo
 - Bakshy, Eckles & Bernstein, "Designing and Deploying Online Field Experiments (PlanOut)."
 - Uber Michelangelo / Feast documentation — feature stores and training-serving skew.
 
-### Lectures L12 and beyond
+## Module 6/Lecture L12 and beyond
 
 Other lecture details will be added in due time. They will tentatively cover topics the following areas based on lecture-hours available and student interests.
 
@@ -373,10 +373,10 @@ weekday slots follow the room timetable; buffer weeks absorb holiday shifts.
 | Project | 20 Nov | 25% |
 | End-Sem | 23 Nov | 20% |
 | Optional for bonus (marketplace-simulation full build and research survey) | 20 Nov | up to +10% |
-| **Total** | | **100% (+5% bonus)** |
+| **Total** | | **100% (+10% bonus)** |
 
 The two assignments plus the project put 45% of the grade on building, and the optional bonus
-track can add up to 5% more; the written tests carry the concepts, and a portion of every test
+track can add up to 10% more; the written tests carry the concepts, and a portion of every test
 **probes the student's own assignment/project work**. Teams: **up to 2** per assignment (groups
 declared by **15 Aug**), **up to 3** for the project (by **30 Aug**) — and even though work is
 done in teams, __evaluation will always be individual__.
@@ -484,10 +484,10 @@ parameters vary. Deliverable includes the code, the benchmark, and the design no
 
 ### Optional for bonus · up to +10% · individually
 
-The bonus track has a **single option**: the **marketplace-simulation full build**, worth **up to
-+5%**, done solo or in groups of up to two. It follows the same standards as the assignments
-(reproducible repo + short design note), is due **20 Nov**, and may not double-count project work.
-Optionally, one can take up writing research survey on a chosen topic.
+The bonus track has offers two options: pick a topic and do a _research suvery_ 
+and the _marketplace-simulation full build_ (to be released before midsem) worth up to +10% done solo. 
+The programming assignment follows the same standards as the assignments (reproducible repo + short design note), is due **20 Nov**, 
+and may not double-count project work. Optionally, one can take up writing research survey on any topic chosen with instructor.
 
 **Part 1 — rebuild Assignment-1 on the simulation harness.** Teams must explicitly rebuild
 everything in the Assignment-1 spine, but on the marketplace simulation instead of the EB-NeRD
@@ -546,7 +546,8 @@ scholarly search, ad ranking), or pursue a primarily empirical or methodological
 The project need not span every course thread. Instead, it must take on one hard, possibly
 open-ended question — which may sit entirely within a single thread (systems, ML, or
 evaluation) — and explore and evaluate several competing solutions to it in depth. The bar is the
-difficulty of the question and the rigor of the comparison, not breadth of coverage.
+difficulty of the question and the rigor of the study, not breadth of coverage. 
+It can either be engineering or science focused.
 
 ### Project ideas
 
