@@ -1,4 +1,4 @@
-# Information Retrieval and Extraction — Proposed Iteration
+# CS4.406 Information Retrieval and Extraction — Monsoon 2026
 
 A breadth course on the design, construction, and practice of real-world search and
 recommender systems. It weaves together three threads — **systems** (storage, indexing,
