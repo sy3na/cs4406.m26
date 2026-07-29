@@ -15,7 +15,7 @@ ideas that generalize and for building things.
 
 ## Format at a glance
 
-- **Timeline:** About 30 hours of lecture, eight modules from 1 August → 30 November.
+- **Timeline:** About 30 lecture hours, eight modules from 1 August → 30 November.
 - **Written tests (in order):** Quiz-1, Mid-Sem, Quiz-2, End-Sem.
 - **Coursework:** a systems-integration build on a real industry challenge (Assignment-1), a
   from-scratch implementation (Assignment-2), a term project, and an **optional-for-bonus track**
