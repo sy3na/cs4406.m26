@@ -22,6 +22,11 @@ ideas that generalize and for building things.
   (up to +10%). Assignments are meant to be *built with coding assistants* (Claude Code, etc.) —
   the exams then verify the student understood the code and theory.
 
+## AI usage policy
+1. You are expected to use a coding assistant for assignments and project but in evaluation that includes closed-book quiz and exams along with presentation and vivas you are expected to explain what you built by yourself. 
+2. You will submit write-ups for all your work that can be written with help of AI assistants but you should be able to explain it by yourself when probed.
+3. Work done in teams will also be individually evaluated and the ability (or inability) to explain  irrespective of whoever has built it (self, teammate or coding agent) will decide the scoring. The evaluation rubric for each component will given out with the problem statement.
+
 ### Reference material
 
 Central texts, with per-module papers below:
@@ -59,9 +64,10 @@ seeded bootstrap A/B, and bounded-memory streaming KPIs; the repository link is 
 
 - `IIR` Ch. 1 — Boolean retrieval and the IR problem.
 - `SEIRP` Ch. 1 — search engines in practice.
-- Brin & Page, "The Anatomy of a Large-Scale Hypertextual Web Search Engine" — a canonical end-to-end system overview.
-- Olston & Najork, "Web Crawling" (survey) — crawling, focused crawling, and coverage.
-- Cho & Garcia-Molina, "Effective Page Refresh Policies for Web Crawlers" — freshness and age-of-cache.
+- Additionall readings 
+  - Brin & Page, "The Anatomy of a Large-Scale Hypertextual Web Search Engine" — a canonical end-to-end system overview.
+  - Olston & Najork, "Web Crawling" (survey) — crawling, focused crawling, and coverage.
+  - Cho & Garcia-Molina, "Effective Page Refresh Policies for Web Crawlers" — freshness and age-of-cache.
 
 ### L2. System design under constraints
 - Wide-area systems: replication, partitioning / sharding, and why one box cannot scale.
@@ -80,10 +86,12 @@ far worse than any single leaf, forcing hedged requests or tighter per-leaf budg
 **Readings**
 
 - Brewer, "CAP Twelve Years Later: How the Rules Have Changed" — CAP and its nuances.
-- Abadi, "Consistency Tradeoffs in Modern Distributed Database Design" — the PACELC refinement.
-- Dean & Barroso, "The Tail at Scale" — fan-out amplification and tail-latency mitigation.
-- Dean, "Achieving Rapid Response Times in Large Online Services" (Google talk) — latency in web-scale services.
 - `DDIA` Ch. 5–6 — replication and partitioning/sharding.
+- Additional readings
+  - Abadi, "Consistency Tradeoffs in Modern Distributed Database Design" — the PACELC refinement.
+  - Dean & Barroso, "The Tail at Scale" — fan-out amplification and tail-latency mitigation.
+  - Dean, "Achieving Rapid Response Times in Large Online Services" (Google talk) — latency in web-scale services.
+
 - Barroso, Hölzle & Ranganathan, *The Datacenter as a Computer* (Ch. 1–2) — warehouse-scale context.
 
 ### L3. Storage and indexing hardware
@@ -102,11 +110,12 @@ picks the structure.
 **Readings**
 
 - `DDIA` Ch. 3 — storage engines: B-Trees vs. LSM-Trees.
-- O'Neil et al., "The Log-Structured Merge-Tree (LSM-Tree)" — the original LSM design.
-- Chang et al., "Bigtable: A Distributed Storage System for Structured Data" — a production LSM-backed store.
-- Bloom, "Space/Time Trade-offs in Hash Coding with Allowable Errors" — Bloom filters for skip decisions.
-- Athanassoulis et al., "Designing Access Methods: The RUM Conjecture" — read/update/memory trade-offs.
-- Dong et al., "Optimizing Space Amplification in RocksDB" — LSM compaction and amplification in practice.
+- Additional readings
+  - O'Neil et al., "The Log-Structured Merge-Tree (LSM-Tree)" — the original LSM design.
+  - Chang et al., "Bigtable: A Distributed Storage System for Structured Data" — a production LSM-backed store.
+  - Bloom, "Space/Time Trade-offs in Hash Coding with Allowable Errors" — Bloom filters for skip decisions.
+  - Athanassoulis et al., "Designing Access Methods: The RUM Conjecture" — read/update/memory trade-offs.
+  - Dong et al., "Optimizing Space Amplification in RocksDB" — LSM compaction and amplification in practice.
 
 ## Module 2 — Building a queryable index (L4–L5)
 
@@ -128,11 +137,12 @@ banding surfaces the pair without comparing it to every other document.
 
 - `IIR` Ch. 2 — tokenization, normalization, and the term vocabulary.
 - `MMDS` Ch. 3 — finding similar items: shingling, MinHash, and LSH.
-- Broder, "On the Resemblance and Containment of Documents" — MinHash and Jaccard estimation.
-- Charikar, "Similarity Estimation Techniques from Rounding Algorithms" — SimHash.
-- Manku, Jain & Das Sarma, "Detecting Near-Duplicates for Web Crawling" — SimHash at web scale.
-- Sarawagi, "Information Extraction" (survey) — entity/field extraction foundations.
-- Manning, Surdeanu et al., "The Stanford CoreNLP Natural Language Processing Toolkit" — a practical NLP/IE pipeline.
+- Additional readings
+  - Broder, "On the Resemblance and Containment of Documents" — MinHash and Jaccard estimation.
+  - Charikar, "Similarity Estimation Techniques from Rounding Algorithms" — SimHash.
+  - Manku, Jain & Das Sarma, "Detecting Near-Duplicates for Web Crawling" — SimHash at web scale.
+  - Sarawagi, "Information Extraction" (survey) — entity/field extraction foundations.
+  - Manning, Surdeanu et al., "The Stanford CoreNLP Natural Language Processing Toolkit" — a practical NLP/IE pipeline.
 
 ### L5. Inverted index, compression, and query processing *(merged)*
 - Inverted index anatomy: dictionary + postings (docIDs, term frequencies, positions).
@@ -155,12 +165,13 @@ bandwidth, exactly the bottleneck that matters.
 - `IIR` Ch. 4–6 — index construction, compression, and scoring.
 - `SEIRP` Ch. 5 — ranking and query processing.
 - `MMDS` Ch. 2 — MapReduce (for distributed index build).
-- Broder et al., "Efficient Query Evaluation using a Two-Level Retrieval Process" — the WAND top-k algorithm.
-- Ding & Suel, "Faster Top-k Document Retrieval Using Block-Max Indexes" — Block-Max WAND.
-- Lemire & Boytsov, "Decoding Billions of Integers per Second Through Vectorization" — modern posting-list codecs.
-- Cai & de Rijke, "A Survey of Query Auto Completion in Information Retrieval" — autocomplete/typeahead.
-- `DDIA` Ch. 11 — stream processing and near-real-time updates.
-- Bialecki et al., "Apache Lucene 4" — a production near-real-time inverted index.
+- Additional readings
+  - Broder et al., "Efficient Query Evaluation using a Two-Level Retrieval Process" — the WAND top-k algorithm.
+  - Ding & Suel, "Faster Top-k Document Retrieval Using Block-Max Indexes" — Block-Max WAND.
+  - Lemire & Boytsov, "Decoding Billions of Integers per Second Through Vectorization" — modern posting-list codecs.
+  - Cai & de Rijke, "A Survey of Query Auto Completion in Information Retrieval" — autocomplete/typeahead.
+  - `DDIA` Ch. 11 — stream processing and near-real-time updates.
+  - Bialecki et al., "Apache Lucene 4" — a production near-real-time inverted index.
 
 ## Module 3 — Relevance and ranking (L6–L7)
 
@@ -181,14 +192,15 @@ why we move from a fixed formula to learning a combination of signals.
 **Readings**
 
 - `IIR` Ch. 6, 11, 21 — scoring, probabilistic IR, and link analysis.
-- Robertson & Zaragoza, "The Probabilistic Relevance Framework: BM25 and Beyond" — BM25 derivation and extensions.
-- Zhai & Lafferty, "A Study of Smoothing Methods for Language Models Applied to Ad Hoc Retrieval" — Dirichlet/JM smoothing.
-- Page et al., "The PageRank Citation Ranking: Bringing Order to the Web" — query-independent priors.
-- Kleinberg, "Authoritative Sources in a Hyperlinked Environment" — HITS.
-- Liu, "Learning to Rank for Information Retrieval" (survey) — pointwise/pairwise/listwise framing.
-- Burges, "From RankNet to LambdaRank to LambdaMART: An Overview" — the workhorse LTR objectives.
-- Friedman, "Greedy Function Approximation: A Gradient Boosting Machine" — GBDTs.
-- Qin et al., "Are Neural Rankers Still Outperformed by Gradient-Boosted Decision Trees?" — a modern LTR baseline check.
+- Additional readings
+  - Robertson & Zaragoza, "The Probabilistic Relevance Framework: BM25 and Beyond" — BM25 derivation and extensions.
+  - Zhai & Lafferty, "A Study of Smoothing Methods for Language Models Applied to Ad Hoc Retrieval" — Dirichlet/JM smoothing.
+  - Page et al., "The PageRank Citation Ranking: Bringing Order to the Web" — query-independent priors.
+  - Kleinberg, "Authoritative Sources in a Hyperlinked Environment" — HITS.
+  - Liu, "Learning to Rank for Information Retrieval" (survey) — pointwise/pairwise/listwise framing.
+  - Burges, "From RankNet to LambdaRank to LambdaMART: An Overview" — the workhorse LTR objectives.
+  - Friedman, "Greedy Function Approximation: A Gradient Boosting Machine" — GBDTs.
+  - Qin et al., "Are Neural Rankers Still Outperformed by Gradient-Boosted Decision Trees?" — a modern LTR baseline check.
 
 ### L7. Signals that feed ranking
 - Feature families: query, document, query–document match, and user/context features.
@@ -208,12 +220,13 @@ not unfairly penalized when it becomes training data.
 
 - Chapelle & Zhang, "A Dynamic Bayesian Network Click Model for Web Search Ranking" — position bias and the DBN model.
 - Craswell et al., "An Experimental Comparison of Click Position-Bias Models" — cascade/examination hypotheses.
-- Rendle, "Factorization Machines" — modeling sparse feature interactions.
-- Cheng et al., "Wide & Deep Learning for Recommender Systems" — memorization + generalization.
-- Guo et al., "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction."
-- McMahan et al., "Ad Click Prediction: a View from the Trenches" — FTRL and production CTR lessons.
-- Weinberger et al., "Feature Hashing for Large Scale Multitask Learning" — the hashing trick.
-- Guo et al., "On Calibration of Modern Neural Networks" — calibration and temperature scaling.
+- Additional readings
+  - Rendle, "Factorization Machines" — modeling sparse feature interactions.
+  - Cheng et al., "Wide & Deep Learning for Recommender Systems" — memorization + generalization.
+  - Guo et al., "DeepFM: A Factorization-Machine based Neural Network for CTR Prediction."
+  - McMahan et al., "Ad Click Prediction: a View from the Trenches" — FTRL and production CTR lessons.
+  - Weinberger et al., "Feature Hashing for Large Scale Multitask Learning" — the hashing trick.
+  - Guo et al., "On Calibration of Modern Neural Networks" — calibration and temperature scaling.
 
 ## Module 4 — Semantic retrieval (L8–L9)
 
@@ -237,13 +250,14 @@ two-tower retriever finds it where BM25 cannot.
 - Karpukhin et al., "Dense Passage Retrieval for Open-Domain Question Answering" — the two-tower DPR.
 - Huang et al., "Embedding-based Retrieval in Facebook Search" — dense retrieval in production.
 - Reimers & Gurevych, "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks."
-- Xiong et al., "Approximate Nearest Neighbor Negative Contrastive Learning (ANCE)" — hard-negative mining.
-- Izacard et al., "Unsupervised Dense Information Retrieval with Contrastive Learning (Contriever)."
-- Nogueira & Lin, "From doc2query to docTTTTTquery" — document expansion.
-- Formal et al., "SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking."
-- Khattab & Zaharia, "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction" (+ "ColBERTv2" and "PLAID").
-- Gao & Callan, "Condenser / coCondenser" — retrieval-oriented pretraining.
-- Radford et al., "Learning Transferable Visual Models From Natural Language Supervision (CLIP)" — cross-modal embeddings.
+- Additional readings
+  - Xiong et al., "Approximate Nearest Neighbor Negative Contrastive Learning (ANCE)" — hard-negative mining.
+  - Izacard et al., "Unsupervised Dense Information Retrieval with Contrastive Learning (Contriever)."
+  - Nogueira & Lin, "From doc2query to docTTTTTquery" — document expansion.
+  - Formal et al., "SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking."
+  - Khattab & Zaharia, "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction" (+ "ColBERTv2" and "PLAID").
+  - Gao & Callan, "Condenser / coCondenser" — retrieval-oriented pretraining.
+  - Radford et al., "Learning Transferable Visual Models From Natural Language Supervision (CLIP)" — cross-modal embeddings.
 
 ### L9. Approximate nearest neighbors at scale
 - Why exact NN and kd-trees collapse in high dimensions (curse of dimensionality).
@@ -264,10 +278,11 @@ percent recall for orders of magnitude in speed and RAM.
 - Malkov & Yashunin, "Efficient and Robust Approximate Nearest Neighbor Search Using HNSW Graphs."
 - Johnson, Douze & Jégou, "Billion-scale Similarity Search with GPUs (FAISS)."
 - Jégou, Douze & Schmid, "Product Quantization for Nearest Neighbor Search."
-- Indyk & Motwani, "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality" — LSH foundations.
-- Guo et al., "Accelerating Large-Scale Inference with Anisotropic Vector Quantization (ScaNN)."
-- Wang et al., "Milvus: A Purpose-Built Vector Data Management System" (SIGMOD 2021).
-- Aumüller, Bernhardsson & Faithfull, "ANN-Benchmarks: A Benchmarking Tool for ANN Algorithms."
+- Additional readings
+  - Indyk & Motwani, "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality" — LSH foundations.
+  - Guo et al., "Accelerating Large-Scale Inference with Anisotropic Vector Quantization (ScaNN)."
+  - Wang et al., "Milvus: A Purpose-Built Vector Data Management System" (SIGMOD 2021).
+  - Aumüller, Bernhardsson & Faithfull, "ANN-Benchmarks: A Benchmarking Tool for ANN Algorithms."
 
 ## Module 5 — Evaluation, practice, and serving (L10–L12)
 
@@ -288,13 +303,14 @@ judge, human or model, is a biased instrument to be validated before you trust i
 **Readings**
 
 - `IIR` Ch. 8 — evaluation in information retrieval.
-- Järvelin & Kekäläinen, "Cumulated Gain-based Evaluation of IR Techniques" — (n)DCG.
-- Voorhees, "The Philosophy of Information Retrieval Evaluation" — TREC and pooling.
-- Sanderson, "Test Collection Based Evaluation of Information Retrieval Systems" (survey).
-- Chapelle et al., "Expected Reciprocal Rank for Graded Relevance" — a cascade-aware metric.
-- Zheng et al., "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena."
-- Thomas et al. (Microsoft), "Large Language Models can Accurately Predict Searcher Preferences."
-- Faggioli et al., "Perspectives on Large Language Models for Relevance Judgment."
+- Additional readings
+  - Järvelin & Kekäläinen, "Cumulated Gain-based Evaluation of IR Techniques" — (n)DCG.
+  - Voorhees, "The Philosophy of Information Retrieval Evaluation" — TREC and pooling.
+  - Sanderson, "Test Collection Based Evaluation of Information Retrieval Systems" (survey).
+  - Chapelle et al., "Expected Reciprocal Rank for Graded Relevance" — a cascade-aware metric.
+  - Zheng et al., "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena."
+  - Thomas et al. (Microsoft), "Large Language Models can Accurately Predict Searcher Preferences."
+  - Faggioli et al., "Perspectives on Large Language Models for Relevance Judgment."
 
 ### L11. Retrieval lifecycle and online experimentation
 - The retrieve → filter → rank → blend pipeline: candidate generation, light then heavy rankers, policy filters.
@@ -312,14 +328,15 @@ controls the error — the difference between a real win and noise you talked yo
 
 **Readings**
 
-- `TOCE` — Trustworthy Online Controlled Experiments (core text).
 - Kohavi et al., "Online Controlled Experiments and A/B Testing" (KDD tutorial/survey).
-- Deng et al., "Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data (CUPED)."
-- Johari et al., "Peeking at A/B Tests: Why It Matters, and What to Do About It" — always-valid sequential testing.
-- Chapelle et al., "Large-Scale Validation and Analysis of Interleaved Search Evaluation."
-- Radlinski, Kurup & Joachims, "How Does Clickthrough Data Reflect Retrieval Quality?"
-- Bakshy, Eckles & Bernstein, "Designing and Deploying Online Field Experiments (PlanOut)."
-- Uber Michelangelo / Feast documentation — feature stores and training-serving skew.
+- Additional readings
+  - `TOCE` — Trustworthy Online Controlled Experiments (core text).
+  - Deng et al., "Improving the Sensitivity of Online Controlled Experiments by Utilizing Pre-Experiment Data (CUPED)."
+  - Johari et al., "Peeking at A/B Tests: Why It Matters, and What to Do About It" — always-valid sequential testing.
+  - Chapelle et al., "Large-Scale Validation and Analysis of Interleaved Search Evaluation."
+  - Radlinski, Kurup & Joachims, "How Does Clickthrough Data Reflect Retrieval Quality?"
+  - Bakshy, Eckles & Bernstein, "Designing and Deploying Online Field Experiments (PlanOut)."
+  - Uber Michelangelo / Feast documentation — feature stores and training-serving skew.
 
 ## Module 6/Lecture L12 and beyond
 
@@ -340,15 +357,15 @@ weekday slots follow the room timetable; buffer weeks absorb holiday shifts.
 
 | Week | Approx. dates | Lectures | Module & lecture titles | Assessment / milestone |
 |------|---------------|----------|-------------------------|------------------------|
-| 1 | Aug 1–7 | L1, L2 | *M1 Systems foundations* — L1 Course overview & the IR problem; L2 System design under constraints | Team formation begins; **Assignment-1 (component-1)** released |
-| 2 | Aug 8–14 | L3, L4 | L3 Storage & indexing hardware; *M2 Building a queryable index* — L4 Text processing, deduplication & sketching | |
-| 3 | Aug 15–21 | L5, L6 | L5 Inverted index, compression & query processing; *M3 Relevance & ranking* — L6 Ranking models: heuristics to learning-to-rank | **Assignment-2** released · **assignment groups declared (15 Aug)** |
-| 4 | Aug 22–28 | L7, L8 | L7 Signals that feed ranking; *M4 Semantic retrieval* — L8 Embeddings & semantic search | **Quiz-1 (27 Aug) · A1 component-1 due (27 Aug)**; A1 component-2 released |
-| 5 | Aug 29–Sep 4 | L9, L10 | L9 Approximate nearest neighbors at scale; *M5 Evaluation, practice & serving* — L10 Evaluation: offline metrics, human judgments & LLM-as-judge | **Project groups declared (30 Aug)** · **project proposal + initial literature survey due (31 Aug)** |
-| 6 | Sep 5–11 | L11, L12 | L11 Retrieval lifecycle & online experimentation; L12 | **A1 component-2 due (10 Sep)** |
+| 1 | Aug 1–7 | L1, L2 | *M1 Systems foundations*<br> L1 Course overview & the IR problem;<br> L2 System design under constraints | Team formation begins; **Assignment-1 (component-1)** released |
+| 2 | Aug 8–14 | L3, L4 | L3 Storage & indexing hardware;<br> *M2 Building a queryable index*<br> L4 Text processing, deduplication & sketching | |
+| 3 | Aug 15–21 | L5, L6 | L5 Inverted index, compression & query processing;<br> *M3 Relevance & ranking*<br> L6 Ranking models: heuristics to learning-to-rank | **Assignment-2** released · **assignment groups declared (15 Aug)** |
+| 4 | Aug 22–28 | L7, L8 | L7 Signals that feed ranking;<br> *M4 Semantic retrieval*<br> L8 Embeddings & semantic search | **Quiz-1 (27 Aug) · A1 component-1 due (27 Aug)**; A1 component-2 released |
+| 5 | Aug 29–Sep 4 | L9, L10 | L9 Approximate nearest neighbors at scale;<br> *M5 Evaluation, practice & serving*<br> L10 Evaluation: offline metrics, human judgments & LLM-as-judge | **Project groups declared (30 Aug)** · **project proposal + initial literature survey due (31 Aug)** |
+| 6 | Sep 5–11 | L11, L12 | L11 Retrieval lifecycle & online experimentation;<br> L12 | **A1 component-2 due (10 Sep)** |
 | 7 | Sep 12–18 | L13, L14 | *M6 Recommender systems* — L13  L14  | **A2 due (14 Sep)** |
 | 8 | Sep 19–25 | (review + buffer) | — | **Mid-Sem (21 Sep)** |
-| 9 | Sep 26–Oct 2 | L15, L16 | *M7 Industry architectures* — L15  L16 | **Project problem revised & finalized (30 Sep)** |
+| 9 | Sep 26–Oct 2 | L15, L16 | *M7 Industry architectures*— L15  L16 | **Project problem revised & finalized (30 Sep)** |
 | 10 | Oct 3–9 | L17, L18 | L17 *M8 Applications & frontier* — L18 | |
 | 11 | Oct 10–16 | L19, L20 | L19  L20  | |
 | 12 | Oct 17–23 | L21, L22 | L21 L22 | **Quiz-2 (22 Oct)** (L13–L20) |
@@ -564,14 +581,5 @@ Scoped prototypes; evaluation plan agreed with the instructor first:
   corpus; compare against BM25/dense and study behaviour under index updates. 
 - **RAG evaluation harness** — chunking + hybrid retrieval + rerank + generate, with RAGAS-style
   grounding and answer-quality evaluation. 
-
-## AI usage policy statement
-
-You are expected to use a coding assistant for assignments and project 
-but in evaluation that includes closed-book quiz and exams along with presentation and vivas 
-you are expected to explain what you built by yourself. 
-Work done in teams will also be individually evaluated and the ability (or inability) to explain 
-irrespective of whoever has built it (self, teammate or coding agent) will decide the scoring.
-The evaluation rubric for each component will given out with the problem statement.
 
 ---
